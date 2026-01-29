@@ -9,6 +9,9 @@ lista_peliculas = ()
 
 # Tarea 2 - Mati: Crear lista de series
 lista_series = ()
+lista_series.append("The Last of Us")
+lista_series.append("Andor")
+lista_series.append("The Mandalorian")
 
 # Tarea 3 - Naiyah: Crear lista de videojuegos
 lista_videojuegos = ()

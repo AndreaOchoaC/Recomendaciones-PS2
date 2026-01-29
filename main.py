@@ -8,6 +8,10 @@ ans = int(input("1. Películas \n 2. Series \n 3. Videojuegos \n"))
 
 # Tarea 1 - Leo: Crear lista de películas
 lista_peliculas = list()
+lista_peliculas.append("Interstellar")
+lista_peliculas.append("Frankenstein")
+lista_peliculas.append("Sonic")
+lista_peliculas.append("Lilo y Stitch")
 
 # Tarea 2 - Mati: Crear lista de series
 lista_series = list()
@@ -17,6 +21,8 @@ lista_series.append("The Mandalorian")
 
 # Tarea 3 - Naiyah: Crear lista de videojuegos
 lista_videojuegos = list()
+lista_videojuegos.append("Granny")
+lista_videojuegos.append("Yandere Simulator")
 
 if len(lista_series) != 0:
     i= randint(0, len(lista_series)-1)

@@ -24,17 +24,17 @@ for i in range(0, len(lista_videojuegos)):
     opcion_videos = lista_videojuegos[i]
 
 if ans == 1:
-    print("Te recomiendo la película: ")
+    print("Te recomiendo la película:", opcion_pelis)
 elif ans == 2:
-    print("Te recomiendo la serie: ")
+    print("Te recomiendo la serie:", opcion_series)
 elif ans == 3:
-    print("Te recomiendo el videojuego: ")
+    print("Te recomiendo el videojuego:", opcion_videos)
 else:
     print("Ingresa una opción válida.")
 
 # Haré más modificaciones aquí, veamos que pasa si cometo un error
 
-a = input("¿quieres otra recomendación? Sí/No")
+a = input("¿quieres otra recomendación? Sí/No: ")
 if a == "sí":
     pass
 else:

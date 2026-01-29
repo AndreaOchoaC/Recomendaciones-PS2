@@ -1,6 +1,8 @@
 # Este es el archivo principal de nuestro proyecto
 # Objetivo: Crear un bot de recomendaciones
 
+from random import *
+
 print("¿Qué quieres que te recomiende hoy?")
 ans = int(input("1. Películas \n 2. Series \n 3. Videojuegos \n"))
 
@@ -16,12 +18,21 @@ lista_series.append("The Mandalorian")
 # Tarea 3 - Naiyah: Crear lista de videojuegos
 lista_videojuegos = list()
 
-for i in range(0, len(lista_series)):
+if len(lista_series) != 0:
+    i= randint(0, len(lista_series)-1)
     opcion_series = lista_series[i]
-for i in range(0, len(lista_peliculas)):
-    opcion_pelis = lista_peliculas[i]
-for i in range(0, len(lista_videojuegos)):
-    opcion_videos = lista_videojuegos[i]
+else:
+    opcion_series = "Vacío"
+if len(lista_peliculas) != 0:
+    j = randint(0, len(lista_peliculas)-1)
+    opcion_pelis = lista_peliculas[j] 
+else:
+    opcion_pelis = "Vacío"
+if len(lista_videojuegos) != 0:
+    k = randint(0, len(lista_videojuegos)-1)
+    opcion_videos = lista_videojuegos[k]
+else:
+    opcion_videos = "Vacío"
 
 if ans == 1:
     print("Te recomiendo la película:", opcion_pelis)
@@ -33,9 +44,10 @@ else:
     print("Ingresa una opción válida.")
 
 # Haré más modificaciones aquí, veamos que pasa si cometo un error
-
+'''
 a = input("¿quieres otra recomendación? Sí/No: ")
 if a == "sí":
     pass
 else:
     print("error")
+'''

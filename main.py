@@ -12,6 +12,9 @@ lista_pan.append("ojo de buey")
 lista_pan.append("dona")
 lista_pan.append("concha")
 
+# Andrea: crear lista de series
+lista_series = ["Warrior Nun", "Andor", "Kenobi"]
+
 # Tarea 1 - Jorge: Crear lista de películas
 lista_peliculas = list()
 
